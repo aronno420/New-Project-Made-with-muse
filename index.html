@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Made With Muse | Handmade Floral Creations</title>
+  <!-- CSS ফাইল লিংক -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <body class="custom-bg"></body>
+  
+
+  <!-- ==================== MAIN FULLSCREEN BACKGROUND IMAGE ==================== -->
+  <div class="bg-image-overlay"></div>
+
+  <!-- ==================== PRELOADER SCREEN ==================== -->
+  <div id="loader-wrapper">
+    <div class="loader-bg-overlay"></div>
+    <div class="loader-content">
+      <div class="logo-ring-container">
+        <div class="spinner-ring"></div>
+        <!-- আপনার লোগো পিকচার (logo.png) -->
+        <img src="assets/825267063_122107334619483835_4154195008781926888_n-photoaidcom-cropped.jpg" alt="Made WithMuse " class="loader-logo">
+      </div>
+      <h2 class="loader-brand-name">Madw With MUSE</h2>
+      <p class="loader-tagline">Crafting Moments with Nature</p>
+      
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <span id="progress-text" class="progress-text">0%</span>
+    </div>
+  </div>
+
+  <!-- ==================== BACKGROUND PETALS CANVAS ==================== -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- ==================== BACKGROUND AUDIO ==================== -->
+  <audio id="bg-music" loop preload="auto">
+    <!-- আপনার মিউজিক ফাইল (music.mp3) -->
+    <source src="music.mp3/Justin Bieber - Baby ft. Ludacris.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Audio Floating Control -->
+  <button id="audio-toggle-btn" class="audio-btn" title="Toggle Music">
+    <span id="audio-icon">🎵</span>
+    <span class="audio-label">Sound</span>
+  </button>
+
+  <!-- ==================== MAIN CONTENT SECTION ==================== -->
+   
+  
+  <main class="main-container">
+    <div class="glass-card">
+      
+      <!-- Brand Header -->
+      <div class="header-section">
+        <img src="assets/825267063_122107334619483835_4154195008781926888_n-photoaidcom-cropped.jpg" alt="Muse Logo" class="brand-small-logo">
+        <h1 class="brand-title">Made with MUSE</h1>
+        <div class="title-divider"><span>❀</span></div>
+      </div>
+
+      <!-- Custom Required Texts -->
+      <div class="message-section">
+        <h2 class="thank-you-text">Thank you for purchasing our product!</h2>
+        <p class="instruction-text">Scan the QR code to connect with</p>
+        <p class="brand-highlight">Made with Muse!</p>
+      </div>
+
+      <!-- QR Code Display Frame -->
+      <div class="qr-container">
+        <div class="qr-frame">
+          <div class="qr-border-glow"></div>
+          <!-- আপনার QR কোডের পিকচার (qr-code.png) -->
+          <img src="assets/Facebook Share QR.png" alt="Connect QR Code" class="qr-image">
+        </div>
+      </div>
+
+      <!-- Footer Tagline -->
+      <div class="footer-section">
+        <p class="tagline">Explore our handmade floral creations<br>crafted for every special moment.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- JavaScript ফাইল লিংক -->
+  <script src="script.js"></script>
+</body>
+</html>
